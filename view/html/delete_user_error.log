@@ -1,0 +1,4 @@
+[16-Dec-2024 16:28:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Database::begin_transaction() in C:\xampp\htdocs\Habitude Self-Improvement Tracker\view\html\delete_user.php:60
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Habitude Self-Improvement Tracker\view\html\delete_user.php on line 60

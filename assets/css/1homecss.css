@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root {
+    --primary-purple: #8A2BE2;
+    --primary-pink: #FF69B4;
+    --text-dark: #333333;
+    --text-light: #FFFFFF;
+    --background-light: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Navigation */
+nav {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-purple);
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 2rem 6rem;
+    color: var(--text-light);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add the wave curve */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust height of the curve */
+    background: var(--background-light);
+    clip-path: ellipse(100% 100% at 50% 100%);
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-right: 2rem;
+    position: relative;
+    z-index: 1; /* Ensure content stays above the curve */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+    z-index: 1; /* Ensure content stays above the curve */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Features Section */
+#features {
+    padding: 5rem 2rem;
+    background: var(--background-light);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1.5rem;
+}
+
+/* About Section */
+#about {
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+    background: var(--primary-purple);
+    color: var(--text-light);
+    font-size: 1.1rem;
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+.action-button {
+    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+.nav-button {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--primary-purple);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--primary-purple);
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: var(--text-dark);
+    color: var(--text-light);
+    padding: 3rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links, .footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a, .footer-social a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 8rem;
+    }
+
+    .hero-content {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+/* Add a subtle animation to the wave (optional) */
+@keyframes wave {
+    0% {
+        clip-path: ellipse(100% 100% at 50% 100%);
+    }
+    50% {
+        clip-path: ellipse(100% 95% at 50% 100%);
+    }
+    100% {
+        clip-path: ellipse(100% 100% at 50% 100%);
+    }
+}
+
+.hero::after {
+    animation: wave 8s ease-in-out infinite;
+}
+
+/* Responsive adjustments for the wave */
+@media (max-width: 768px) {
+    .hero::after {
+        height: 100px; /* Smaller curve on mobile */
+    }
+}
