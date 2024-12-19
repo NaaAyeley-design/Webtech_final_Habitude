@@ -1,0 +1,25 @@
+PDO Connection Failed[2024-12-15 06:56:50] PDO Connection Failed
+[2024-12-15 07:02:53] Raw Input: {"user_id":2,"entry_id":1}
+[2024-12-15 07:02:53] Entry 1 deleted successfully
+[2024-12-15 12:42:28] Raw Input: {"user_id":2,"entry_id":7}
+[2024-12-15 12:42:28] Entry 7 deleted successfully
+[2024-12-15 16:58:00] Raw Input: {"user_id":2,"entry_id":6}
+[2024-12-15 16:58:00] Entry 6 deleted successfully
+[2024-12-15 16:58:03] Raw Input: {"user_id":2,"entry_id":5}
+[2024-12-15 16:58:03] Entry 5 deleted successfully
+[2024-12-15 16:58:07] Raw Input: {"user_id":2,"entry_id":4}
+[2024-12-15 16:58:07] Entry 4 deleted successfully
+[2024-12-15 16:58:11] Raw Input: {"user_id":2,"entry_id":3}
+[2024-12-15 16:58:11] Entry 3 deleted successfully
+[2024-12-15 16:58:15] Raw Input: {"user_id":2,"entry_id":2}
+[2024-12-15 16:58:15] Entry 2 deleted successfully
+[2024-12-15 17:11:37] Raw Input: {"user_id":2,"entry_id":"10"}
+[2024-12-15 17:11:37] Entry 10 deleted successfully
+[2024-12-15 17:11:40] Raw Input: {"user_id":2,"entry_id":"9"}
+[2024-12-15 17:11:40] Entry 9 deleted successfully
+[2024-12-15 17:11:44] Raw Input: {"user_id":2,"entry_id":"8"}
+[2024-12-15 17:11:44] Entry 8 deleted successfully
+[2024-12-15 21:39:37] Raw Input: {"user_id":2,"entry_id":"11"}
+[2024-12-15 21:39:37] Entry 11 deleted successfully
+[2024-12-17 13:58:24] Raw Input: {"user_id":19,"entry_id":"17"}
+[2024-12-17 13:58:24] Entry 17 deleted successfully
